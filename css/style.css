@@ -28,6 +28,10 @@ body a:hover{
 	background:#F7DA64;
 }
 /*-- header --*/
+.borderize {
+	border: black;
+	border-width: 5px;
+}
 .body-content1{
 	padding: 2em 1em 3em;
     background: #fff;

@@ -1,29 +1,21 @@
 <?php
-$host = "localhost:8080";
-$user = "mella0910";
-$pass = "";
-$db= "lsca_login"
+	include "MySQLHandler.php";
+	$db = new MySQLHandler($db);
+	$db -> init();
 
-mysql_connect ($host, $user, $pass);
-mysql_select_db($db);
+	$email = $_POST["email"];
+	$password = $_POST["password"];
+	
+	include "controller.php";
+	$Controller = new controller($db);
 
-if(isset($_POST['username'])) {
+	
+	$x = $Controller -> login($email, $password);
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+	echo '<script>alert("result = $x"</script>';
 
-$sql = "SELECT * FROM users WHERE username='' ".$user."' AND password ='".$pass."' LIMIT 1";
-$res= mysql_query($sql);
+	if ($x == "true") header('Location: dashboard.html');
+	else echo '<script>alert("Incorrect E-MAIL or PASSWORD.</script>';
 
-if (mysql_num_rows($res) == 1){
-
-	echo "successfully log-in";
-	exit();
-}
-else {
-	echo "NOt successfully log-in";
-	exit();
-}
-
-}
+	die();	
 ?>

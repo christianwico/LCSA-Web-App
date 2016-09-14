@@ -48,7 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header -->
 				<div class="logo-search">
 					<div class="logo">
-						<h1><a href="index.html">k<span class="color">i</span><span class="color1">d</span><span class="color2">s</span> <span>school</span> <i>Good Start To Your Child</i></a></h1>
+						<h1><a href="index.html">Liv<span class="color">ing</span><span class="color1">Sto</span><span class="color2">ne</span> <i>Christian Acamdemy</i></a></h1>
 					</div>
 					<div class="search">
 						<form>
@@ -318,8 +318,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 						        <fieldset>          
-						          <label for="mail">User ID :</label>
-						          <input type="text" id="user" name="username">
+						          <label for="mail">E-mail :</label>
+						          <input type="text" id="user" name="email">
 						          
 						          <label for="password">Password:</label>
 						          <input type="password" id="pass" name="password">
